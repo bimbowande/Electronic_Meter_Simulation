@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/meter.css">
 </head>
 <body>
@@ -85,18 +86,18 @@
 								</div>
 								<div class="btn-content">
 									<div class="btn">
-										<button class="btn-box">1</button>
-										<button class="btn-box">2</button>
-										<button class="btn-box">3</button>
-										<button class="btn-box">4</button>
-										<button class="btn-box">5</button>
-										<button class="btn-box">6</button>
-										<button class="btn-box">7</button>
-										<button class="btn-box">8</button>
-										<button class="btn-box">9</button>
-										<button class="btn-box">10</button>
-										<button class="btn-box">11</button>
-										<button class="btn-box">12</button>
+										<button class="btn-box" data-value ='1'>1</button>
+										<button class="btn-box" data-value ='2'>2</button>
+										<button class="btn-box" data-value ='3'>3</button>
+										<button class="btn-box" data-value ='4'>4</button>
+										<button class="btn-box" data-value ='5'>5</button>
+										<button class="btn-box" data-value ='6'>6</button>
+										<button class="btn-box" data-value ='7'>7</button>
+										<button class="btn-box" data-value ='8'>8</button>
+										<button class="btn-box" data-value ='9'>9</button>
+										<button class="btn-box arrow-btn-left" data-value='delete' ></button>
+										<button class="btn-box" data-value ='0'>0</button>
+										<button class="btn-box arrow-btn-right" data-value='send'></button>
 									</div>
 									<div class="btn-command">
 										<div class="command-text">
@@ -156,5 +157,7 @@
 			</div>
 		</div >
 	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="scripts/actions.js"></script>
 </body>
 </html>

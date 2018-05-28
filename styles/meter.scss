@@ -181,6 +181,13 @@ body,html{
 				padding :10px 0 10px 0;
 				width: 100%;
 			}
+		&:hover{
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				background-color: rgba(0,0,0,.8);
+			}
 		}
 	}
 	& .btn-command{
@@ -194,5 +201,27 @@ body,html{
 				margin-left: 5px;
 			}
 		}
+	}
+}
+
+
+.arrow-btn-left:before{
+	font-family: FontAwesome;
+	content:'\f177';
+	color: black;
+	&:hover{
+		color: white;
+	}
+}
+
+.arrow-btn-right:before{
+	font-family: FontAwesome;
+	content:' \f178';
+	color: black;
+		
+}
+.arrow-btn-left,.arrow-btn-right{
+	&:hover{
+		background: white !important;
 	}
 }
