@@ -1,9 +1,9 @@
-/* line 1, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 1, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 * {
   margin: 0;
   padding: 0; }
 
-/* line 5, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 5, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 body, html {
   width: 100%;
   height: 100%;
@@ -11,57 +11,57 @@ body, html {
   padding: 0;
   box-sizing: border-box; }
 
-/* line 12, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 12, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .container-style {
   width: inherit;
   height: inherit; }
 
-/* line 16, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 16, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .design-section {
   margin: 0 auto;
   height: 100%;
   width: 90%; }
 
-/* line 21, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 21, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-design {
   height: 520px;
   width: 40%;
   margin: 0 auto;
   padding: 10px 5px; }
-  /* line 26, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 26, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-design .meter-layer {
     background-color: rgba(234, 234, 234, 0.9);
     height: 100%;
     border-radius: 10px;
     padding: 5px 10px; }
-    /* line 31, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 31, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-design .meter-layer-2 {
       border-style: dotted;
       height: inherit;
       border-color: rgba(24, 24, 24, 0.1);
       padding: 4px 3px; }
-    /* line 37, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 37, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-design .meter-layer-3 {
       box-shadow: 3px 3px 10px 3px rgba(123, 123, 123, 0.4);
       height: inherit;
       background-color: rgba(234, 234, 234, 0.9); }
 
 /*meter features*/
-/* line 47, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 47, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-layer-3 .meter-layer-content {
   width: inherit;
   height: 90%;
   padding: 10px; }
-  /* line 52, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 52, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-layer-3 .meter-layer-content .indicator-section .indicator-content {
     display: flex; }
-    /* line 54, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 54, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator {
       margin-left: 18px;
       position: relative;
       text-align: center;
       padding: 3px; }
-      /* line 59, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 59, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator .indicator-light {
         width: 18px;
         display: inline-block;
@@ -71,13 +71,13 @@ body, html {
         margin-left: 20px;
         border: 1px solid rgba(134, 134, 134, 0.9);
         box-shadow: 1px 2px 1px 1px rgba(34, 34, 34, 0.9); }
-      /* line 69, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 69, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator h3 {
         position: absolute;
         width: 60px;
         font-size: 12px;
         font-weight: 100; }
-    /* line 76, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 76, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .sensor {
       margin-left: 23px;
       margin-top: 10px;
@@ -85,12 +85,12 @@ body, html {
       height: 50px;
       background-color: black; }
 
-/* line 91, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 91, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-screen {
   width: inherit;
   margin-top: 15px;
   text-align: center; }
-  /* line 95, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 95, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-screen .meter-screen-content {
     width: 80%;
     padding: 10px;
@@ -100,67 +100,67 @@ body, html {
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#777), to(#ddd)); }
 
-/* line 106, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 106, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-text {
   padding: 5px; }
-  /* line 109, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 109, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-1 {
     font-family: Georgia;
     display: flex;
     position: relative;
     margin-bottom: 10px; }
-    /* line 115, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 115, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h2, .meter-text .text-1 span {
       color: #0c0c8c; }
-    /* line 118, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 118, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h2 {
       margin-left: 30px;
       font-style: italic; }
-    /* line 122, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 122, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h3 {
       position: absolute;
       right: 25px;
       font-weight: 800; }
-  /* line 129, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 129, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-2 {
     text-align: center;
     font-family: sans-serif;
     line-height: 20px; }
-    /* line 133, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 133, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-2 h4 {
       display: inline-block; }
-  /* line 137, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 137, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-3 {
     display: flex;
     margin-top: 10px; }
-    /* line 140, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 140, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-3 .isbn-image {
       width: 60%;
       text-align: right; }
-      /* line 143, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 143, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-text .text-3 .isbn-image img {
         width: 60%; }
-    /* line 147, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 147, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-3 .status-code {
       width: 40%;
       margin-left: 10px;
       border: 1px solid black; }
-      /* line 151, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 151, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-text .text-3 .status-code .text-content {
         display: flex;
         height: auto;
         margin-top: 3px; }
-        /* line 155, ../../wamp/www/kola-design/styles/meter.scss */
+        /* line 155, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
         .meter-text .text-3 .status-code .text-content h4, .meter-text .text-3 .status-code .text-content p {
           padding: 2px;
           font-size: 12px; }
 
-/* line 164, ../../wamp/www/kola-design/styles/meter.scss */
+/* line 164, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .btn-content {
   display: flex;
   margin-top: 10px;
   margin-left: 20px; }
-  /* line 170, ../../wamp/www/kola-design/styles/meter.scss */
+  /* line 170, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .btn-content .btn .btn-box {
     display: inline-block;
     width: 30%;
@@ -171,21 +171,47 @@ body, html {
     text-align: center;
     border-color: transparent;
     border-radius: 10px; }
-    /* line 180, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 180, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .btn-content .btn .btn-box span {
       padding: 10px 0 10px 0;
       width: 100%; }
-  /* line 186, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 184, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    .btn-content .btn .btn-box:hover {
+      border: none;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.8); }
+  /* line 193, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .btn-content .btn-command {
     margin-left: 10px; }
-    /* line 188, ../../wamp/www/kola-design/styles/meter.scss */
+    /* line 195, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .btn-content .btn-command .command-text {
       display: flex; }
-      /* line 190, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 197, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .btn-content .btn-command .command-text h4, .btn-content .btn-command .command-text p {
         font-size: 12px; }
-      /* line 193, ../../wamp/www/kola-design/styles/meter.scss */
+      /* line 200, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .btn-content .btn-command .command-text p {
         margin-left: 5px; }
+
+/* line 208, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.arrow-btn-left:before {
+  font-family: FontAwesome;
+  content: '\f177';
+  color: black; }
+  /* line 212, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .arrow-btn-left:before:hover {
+    color: white; }
+
+/* line 217, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.arrow-btn-right:before {
+  font-family: FontAwesome;
+  content: ' \f178';
+  color: black; }
+
+/* line 224, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.arrow-btn-left:hover, .arrow-btn-right:hover {
+  background: white !important; }
 
 /*# sourceMappingURL=meter.css.map */
