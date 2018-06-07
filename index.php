@@ -1,4 +1,10 @@
+<?
+include_once('scripts/index.php');
+$meterInstance = new Meter();
+$value = $meterInstance->displayData();
+foreach($value as $val => $data){
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +52,9 @@
 								<!-- Meter Screen content -->
 								<div class="meter-screen">
 									<div class="meter-screen-content">
-										<div class="meter-content-display"></div>
+										<div class="meter-content-display">
+										<?  echo $data['available_credit'];?>
+										</div>
 									</div>
 								</div>
 								<!-- End of  Meter Screen content -->
@@ -161,3 +169,5 @@
 	<script src="scripts/actions.js"></script>
 </body>
 </html>
+
+<?}?>
