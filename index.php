@@ -1,4 +1,6 @@
+<?
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +48,9 @@
 								<!-- Meter Screen content -->
 								<div class="meter-screen">
 									<div class="meter-screen-content">
-										<div class="meter-content-display"></div>
+										<div class="meter-content-display">
+											<h3 class="power-output"></h3>
+										</div>
 									</div>
 								</div>
 								<!-- End of  Meter Screen content -->
@@ -158,6 +162,7 @@
 		</div >
 	</section>
 	<script src="js/jquery.min.js"></script>
-	<script src="scripts/actions.js"></script>
+	<script src="js/display.js"></script>
+	<script src="js/actions.js"></script>
 </body>
 </html>
