@@ -1,8 +1,4 @@
 <?
-include_once('scripts/index.php');
-$meterInstance = new Meter();
-$value = $meterInstance->displayData();
-foreach($value as $val => $data){
 
 ?>
 <!DOCTYPE html>
@@ -53,7 +49,7 @@ foreach($value as $val => $data){
 								<div class="meter-screen">
 									<div class="meter-screen-content">
 										<div class="meter-content-display">
-										<?  echo $data['available_credit'];?>
+											<h3 class="power-output"></h3>
 										</div>
 									</div>
 								</div>
@@ -166,8 +162,7 @@ foreach($value as $val => $data){
 		</div >
 	</section>
 	<script src="js/jquery.min.js"></script>
-	<script src="scripts/actions.js"></script>
+	<script src="js/display.js"></script>
+	<script src="js/actions.js"></script>
 </body>
 </html>
-
-<?}?>

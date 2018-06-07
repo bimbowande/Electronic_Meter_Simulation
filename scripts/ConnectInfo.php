@@ -1,5 +1,5 @@
 <?php
-include('./scripts/MeterInfo.php');
+include('./MeterInfo.php');
 class ConnectInfo implements MeterInfo{
     private $host = MeterInfo::DBHOST;
     private $dbuser = MeterInfo::DBUSER;
