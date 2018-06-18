@@ -1,6 +1,6 @@
 $(()=>{
-
     $.get('./scripts/index.php',function(data,status){
+        let powerConsumed = 0;
         let loadIndex = 0;
         let load = [0.8986541,1.4322,0.19999978,0.17899978,2.567839,1.2334222,0.889489,0.23456765,0.87655242]
         let newData = {};
@@ -54,10 +54,7 @@ $(()=>{
                 availablePower= availablePower - load[loadIndex];
                 consumeEnergy(availablePower);
                 updates(availablePower,meter_id);
-            },2200)
-
-       
-        $('.text-1 h2').text(newData.meter_number);
+            },2200);
 
     })
 })                           
