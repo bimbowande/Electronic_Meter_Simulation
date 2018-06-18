@@ -10,14 +10,14 @@ $(()=>{
         let meter_id = parseInt(newData.id);
         let availablePower = parseFloat(newData.available_credit);
 
-        /**
+        /*
          * method for changing the available power
          */
-            function consumeEnergy(availablePower){
+            let consumeEnergy = availablePower =>{
                 $('.power-output').text(availablePower + ' kw');   
             }
 
-       /**
+       /*
         *  method for sending updated power
         */
             let updates = (availablePower,meter_id) => {

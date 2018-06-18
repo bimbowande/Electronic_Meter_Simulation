@@ -20,5 +20,5 @@ if(isset($_POST)){
     $availablePower = $_POST['availablePower'];
     $meter_id = $_POST['meter_id'];
     $updates->getUpdates($availablePower,$meter_id);
-} else echo'no data sent';
+} else echo 'no data sent';
 ?>
