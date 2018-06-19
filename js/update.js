@@ -46,24 +46,8 @@ $(()=>{
                     }
                 })
             }
-        /***************!!  Parse a new section to the page !!************************************************** */
-            let parse_session = id => {
-                let session_id  = {
-                    meter_id
-                }
-                $.ajax({
-                    url:'./scripts/getUpdates.php',
-                    type:"POST",
-                    data:session_id,
-                    success:function(status,data){
-                        console.log(session_id);
-                    },
-                    failure:()=>{
-                        console.log('failed');
-                    }
-                })
-            }
-           
+    
+
 
     /*******************###  UPDATE CHANGES IN  DATABASE #####***************************************** */
 
@@ -84,26 +68,6 @@ $(()=>{
             //updates
             updates(availablePower,meter_id,powerConsumed);
 
-            //send session_id to the page
-            parse_session(meter_id);
-
-            $.get('./scripts/getUpdates.php',(data,status)=>{
-                console.log(data);
-            })
-
         },2200);
-
-
-
-    /***********!!! live feeds updates from data to display on the Meter !!!******************/
-
-        if(typeof(EventSource) !== "undefined") {
-            var source = new EventSource("./scripts/getUpdates.php");
-            source.onmessage = event => {
-                console.log('oya'+ event.data)
-            };
-        } else {
-            console.log( "Sorry, your browser does not support server-sent events...");
-        }
     })
 })                           

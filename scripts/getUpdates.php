@@ -24,9 +24,8 @@ class GetUpdates{
     }
 }
 $doGetUpdates = new GetUpdates();
-echo $_SESSION['meter_id'];
+ $_SESSION['meter_id'];
 
-
-// $doFetchUpdates = $doGetUpdates->fetchUpdates(1);
-// print json_encode($doFetchUpdates);
+ $doFetchUpdates = $doGetUpdates->fetchUpdates($_SESSION['meter_id']);
+ print json_encode($doFetchUpdates);
 ?>
