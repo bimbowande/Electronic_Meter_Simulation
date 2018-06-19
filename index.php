@@ -161,9 +161,10 @@
 			</div>
 		</div >
 	</section>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/display.js"></script>
-	<script src="js/actions.js"></script>
-	<script src="js/update.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/display.js"></script>
+	<script src="./js/actions.js"></script>
+	<script src="./js/update.js"></script>
+	<script src="./js/getUpdates.js"></script>
 </body>
 </html>
