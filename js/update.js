@@ -75,7 +75,7 @@ $(()=>{
             }
             //incerement of the powerConsumed
             powerConsumed += load[loadIndex];
-            console.log('power consumed is ' + powerConsumed);
+            //console.log('power consumed is ' + powerConsumed);
 
             //available Power
             availablePower= availablePower - load[loadIndex];
@@ -86,6 +86,10 @@ $(()=>{
 
             //send session_id to the page
             parse_session(meter_id);
+
+            $.get('./scripts/getUpdates.php',(data,status)=>{
+                console.log(data);
+            })
 
         },2200);
 

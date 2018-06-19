@@ -24,10 +24,6 @@ class GetUpdates{
     }
 }
 $doGetUpdates = new GetUpdates();
-if(isset($_POST)){
-    $id = $_POST['meter_id'];
-    $_SESSION['meter_id'] = $id;  
-}
 echo $_SESSION['meter_id'];
 
 

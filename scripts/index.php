@@ -1,8 +1,9 @@
 <?php
 include_once('./ConnectInfo.php');
-
+session_start();
 $meter_id = range(1,10);
 shuffle($meter_id);
+
 
 class Meter{
    private $query;
@@ -40,6 +41,9 @@ class Meter{
     }
 }
 $data = new Meter();
+$d_data = $data->displayData();
+$_SESSION['meter_id'] = $d_data[0]['id'];
 $sentdata = json_encode($data->displayData());
+ 
 echo $sentdata;
 ?>
