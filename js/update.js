@@ -39,7 +39,8 @@ $(()=>{
                     type:"POST",
                     data:data_parsed,
                     success:function(status,data){
-                        //console.log(data_parsed);
+                        console.log('data sent is ')
+                        console.log(data_parsed);
                     },
                     failure:function(){
                         console.log('failure')
@@ -68,6 +69,13 @@ $(()=>{
             //updates
             updates(availablePower,meter_id,powerConsumed);
 
+             $.get('./scripts/getUpdates.php',(data,status)=>{
+                 console.log('data recieved is  '+ data);
+             })
         },2200);
+
+
+
+    /***********!!! live feeds updates from data to display on the Meter !!!******************/
     })
 })                           

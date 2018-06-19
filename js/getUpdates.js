@@ -1,10 +1,7 @@
 $(()=>{
-     if(typeof(EventSource) !== "undefined") {
-            var source = new EventSource("./scripts/getUpdates.php");
-            source.onmessage = event => {
-                console.log('oya'+ event.data)
-            };
-        } else {
-            console.log( "Sorry, your browser does not support server-sent events...");
-        }
+    let getUpdates = setInterval(()=>{
+        $.get('./scripts/getUpdates.php',(data,status)=>{
+            console.log('data recieved is  '+ data);
+        })
+    },2200)
 })
