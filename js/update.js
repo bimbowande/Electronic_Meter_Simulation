@@ -39,7 +39,7 @@ $(()=>{
                     type:"POST",
                     data:data_parsed,
                     success:function(status,data){
-                        console.log(data_parsed);
+                        //console.log(data_parsed);
                     },
                     failure:function(){
                         console.log('failure')
@@ -47,6 +47,22 @@ $(()=>{
                 })
             }
 
+            let parse_session = id => {
+                let session_id  = {
+                    meter_id
+                }
+                $.ajax({
+                    url:'./scripts/getUpdates.php',
+                    type:"POST",
+                    data:session_id,
+                    success:function(status,data){
+                        console.log(session_id);
+                    },
+                    failure:()=>{
+                        console.log('failed');
+                    }
+                })
+            }
            
 
     /*******************###  UPDATE CHANGES IN  DATABASE #####***************************************** */
@@ -65,7 +81,12 @@ $(()=>{
             availablePower= availablePower - load[loadIndex];
 
             consumeEnergy(availablePower);
+            //updates
             updates(availablePower,meter_id,powerConsumed);
+
+            //send session_id to the page
+            parse_session(meter_id);
+
         },2200);
 
 
