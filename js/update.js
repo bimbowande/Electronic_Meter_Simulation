@@ -46,7 +46,7 @@ $(()=>{
                     }
                 })
             }
-
+        /***************!!  Parse a new section to the page !!************************************************** */
             let parse_session = id => {
                 let session_id  = {
                     meter_id
@@ -94,9 +94,9 @@ $(()=>{
     /***********!!! live feeds updates from data to display on the Meter !!!******************/
 
         if(typeof(EventSource) !== "undefined") {
-            var source = new EventSource("scripts/update.php");
+            var source = new EventSource("./scripts/getUpdates.php");
             source.onmessage = event => {
-                console.log(event.data)
+                console.log('oya'+ event.data)
             };
         } else {
             console.log( "Sorry, your browser does not support server-sent events...");

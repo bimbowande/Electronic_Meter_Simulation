@@ -23,8 +23,14 @@ class GetUpdates{
         }
     }
 }
-
 $doGetUpdates = new GetUpdates();
-$doFetchUpdates = $doGetUpdates->fetchUpdates(1);
-print json_encode($doFetchUpdates);
+if(isset($_POST)){
+    $id = $_POST['meter_id'];
+    $_SESSION['meter_id'] = $id;  
+}
+echo $_SESSION['meter_id'];
+
+
+// $doFetchUpdates = $doGetUpdates->fetchUpdates(1);
+// print json_encode($doFetchUpdates);
 ?>
