@@ -15,8 +15,7 @@ $(()=>{
         let load = [0.8986541,1.4322,0.19999978,0.17899978,2.567839,1.2334222,0.889489,0.23456765,0.87655242]
 
 
-
-        /*************************METHODS************************************* */
+        /*************************## METHODS ##************************************* */
         
         /*
          * method for changing the available power
@@ -52,22 +51,34 @@ $(()=>{
 
     /*******************###  UPDATE CHANGES IN  DATABASE #####***************************************** */
 
-            //updating the database on interval
-            let autoUpdate = setInterval(()=>{
-                loadIndex++;
-                if(loadIndex >load.length-1){
+        //updating the database on interval
+        let autoUpdate = setInterval(()=>{
+            loadIndex++;
+            if(loadIndex >load.length-1){
                     loadIndex = 0;
-                }
-                //incerement of the powerConsumed
-                powerConsumed += load[loadIndex];
-                console.log('power consumed is ' + powerConsumed);
+            }
+            //incerement of the powerConsumed
+            powerConsumed += load[loadIndex];
+            console.log('power consumed is ' + powerConsumed);
 
-                //available Power
-                availablePower= availablePower - load[loadIndex];
+            //available Power
+            availablePower= availablePower - load[loadIndex];
 
-                consumeEnergy(availablePower);
-                updates(availablePower,meter_id,powerConsumed);
-            },2200);
-        })
-        console.log(meter_id);
+            consumeEnergy(availablePower);
+            updates(availablePower,meter_id,powerConsumed);
+        },2200);
+
+
+
+    /***********!!! live feeds updates from data to display on the Meter !!!******************/
+
+        if(typeof(EventSource) !== "undefined") {
+            var source = new EventSource("scripts/update.php");
+            source.onmessage = event => {
+                console.log(event.data)
+            };
+        } else {
+            console.log( "Sorry, your browser does not support server-sent events...");
+        }
+    })
 })                           
