@@ -1,5 +1,5 @@
 $(()=>{
-    $.get('./scripts/index.php',function(data,status){
+    $.get('./scripts/index.php',(data,status) => {
         
         let newData = {};
         let meter_details = JSON.parse(data);
@@ -7,14 +7,21 @@ $(()=>{
             newData = ele;
         })
 
-        //meter_id
+        /**************************VARIABLES ************************************************* */
         let meter_id = parseInt(newData.id);
         let availablePower = parseFloat(newData.available_credit);
+        let powerConsumed = 0;
+        let loadIndex = 0;
+        let load = [0.8986541,1.4322,0.19999978,0.17899978,2.567839,1.2334222,0.889489,0.23456765,0.87655242]
 
+
+
+        /*************************METHODS************************************* */
+        
         /*
          * method for changing the available power
          */
-            let consumeEnergy = availablePower =>{
+            let consumeEnergy = availablePower => {
                 $('.power-output').text(availablePower + ' kw');   
             }
 
@@ -25,10 +32,8 @@ $(()=>{
                 let data_parsed = {
                     availablePower,meter_id,powerConsumed
             }
-
-            
                 /**
-                 *  Post data to the database
+                 *  Post updated info to the database
                  */
                 $.ajax({
                     url:"./scripts/update.php",
@@ -43,9 +48,9 @@ $(()=>{
                 })
             }
 
-            let powerConsumed = 0;
-            let loadIndex = 0;
-            let load = [0.8986541,1.4322,0.19999978,0.17899978,2.567839,1.2334222,0.889489,0.23456765,0.87655242]
+           
+
+    /*******************###  UPDATE CHANGES IN  DATABASE #####***************************************** */
 
             //updating the database on interval
             let autoUpdate = setInterval(()=>{
@@ -53,12 +58,16 @@ $(()=>{
                 if(loadIndex >load.length-1){
                     loadIndex = 0;
                 }
+                //incerement of the powerConsumed
                 powerConsumed += load[loadIndex];
                 console.log('power consumed is ' + powerConsumed);
+
+                //available Power
                 availablePower= availablePower - load[loadIndex];
+
                 consumeEnergy(availablePower);
                 updates(availablePower,meter_id,powerConsumed);
             },2200);
-
-    })
+        })
+        console.log(meter_id);
 })                           
