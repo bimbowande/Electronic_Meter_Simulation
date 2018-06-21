@@ -225,3 +225,11 @@ body,html{
 		background: white !important;
 	}
 }
+.arrow-btn-test{
+	background-color: red;
+	opacity: 0.2;
+	&:hover{
+		background-color: red;
+		opacity: 0.4;
+	}
+}

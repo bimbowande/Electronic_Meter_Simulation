@@ -27,6 +27,5 @@ if(isset($_POST)){
     $meter_id = $_POST['meter_id'];
     $powerConsumed = $_POST['powerConsumed'];
     $collect_update =  $updates->getUpdates($availablePower,$meter_id,$powerConsumed);
-   echo 'boss';
 } else echo 'no data sent';
 ?>

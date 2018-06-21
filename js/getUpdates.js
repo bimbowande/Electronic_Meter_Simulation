@@ -1,4 +1,6 @@
 $(()=>{
+   $('.arrow-btn').attr('disabled',true);
+
     _parsedData = {};
     let _recievedData  = _dataRecieved => {
       
@@ -15,16 +17,16 @@ $(()=>{
             let val = $(this).data('value');
             string += val;
             if(string.length > 2){
-                alert("Invalid input")
+                alert("Invalid input");
             }
             else{
                 $('.power-output').text(string);
+                $('.arrow-btn').attr('disabled',false);
             }
-            
         })
     }
 
-    getValue();
+    console.log(document.querySelector('.power-output').innerHTML);
 
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
    let action_btn = (value) => {
@@ -82,10 +84,6 @@ $(()=>{
     let _getUpdates = setInterval(()=>{
         $.get('./scripts/getUpdates.php',(data,status)=>{
            action_btn(_recievedData(data));
-
-          
         })
     },2200)
-
-
 })

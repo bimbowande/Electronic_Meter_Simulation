@@ -99,9 +99,9 @@
 										<button class="btn-box command-line" data-value ='7'>7</button>
 										<button class="btn-box command-line" data-value ='8'>8</button>
 										<button class="btn-box command-line" data-value ='9'>9</button>
-										<button class="btn-box arrow-btn-left" data-value='delete' ></button>
+										<button class="btn-box arrow-btn arrow-btn-left" data-value='delete' ></button>
 										<button class="btn-box command-line" data-value ='0'>0</button>
-										<button class="btn-box arrow-btn-right" data-value='send'></button>
+										<button class="btn-box  arrow-btn arrow-btn-right" data-value='send'></button>
 									</div>
 									<div class="btn-command">
 										<div class="command-text">

@@ -214,4 +214,13 @@ body, html {
 .arrow-btn-left:hover, .arrow-btn-right:hover {
   background: white !important; }
 
+/* line 228, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.arrow-btn-test {
+  background-color: red;
+  opacity: 0.2; }
+  /* line 231, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .arrow-btn-test:hover {
+    background-color: red;
+    opacity: 0.4; }
+
 /*# sourceMappingURL=meter.css.map */
