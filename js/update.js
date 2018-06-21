@@ -17,13 +17,6 @@ $(()=>{
 
         /*************************## METHODS ##************************************* */
         
-        /*
-         * method for changing the available power
-         */
-            let consumeEnergy = availablePower => {
-                $('.power-output').text(availablePower + ' kw');   
-            }
-
        /*
         *  method for sending updated power
         */
@@ -39,8 +32,7 @@ $(()=>{
                     type:"POST",
                     data:data_parsed,
                     success:function(status,data){
-                        console.log('data sent is ')
-                        console.log(data_parsed);
+                        console.log(data);
                     },
                     failure:function(){
                         console.log('failure')
@@ -65,17 +57,10 @@ $(()=>{
             //available Power
             availablePower= availablePower - load[loadIndex];
 
-            consumeEnergy(availablePower);
             //updates
             updates(availablePower,meter_id,powerConsumed);
 
-             $.get('./scripts/getUpdates.php',(data,status)=>{
-                 console.log('data recieved is  '+ data);
-             })
         },2200);
-
-
-
     /***********!!! live feeds updates from data to display on the Meter !!!******************/
     })
 })                           
