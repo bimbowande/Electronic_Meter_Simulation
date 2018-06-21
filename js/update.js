@@ -32,7 +32,6 @@ $(()=>{
                     type:"POST",
                     data:data_parsed,
                     success:function(status,data){
-                        console.log(data);
                     },
                     failure:function(){
                         console.log('failure')

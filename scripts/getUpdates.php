@@ -28,5 +28,4 @@ $doGetUpdates = new GetUpdates();
 
  $doFetchUpdates = $doGetUpdates->fetchUpdates($_SESSION['meter_id']);
  print json_encode($doFetchUpdates);
- echo 'data';
 ?>
