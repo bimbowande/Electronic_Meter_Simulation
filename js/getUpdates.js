@@ -8,13 +8,11 @@ $(()=>{
         return _parsedData;
     }
 
-   let RefreshELem = data_func => {
-       let {id,meter_number,availablePower,available_credit} = data_func;
-       console.log(data_func);
-   }
-   
-   let action_btn = (value) => {
-       let entry_value,r_value;
+  // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
+   let action_btn = (entry_value,value) => {
+       //destructure the _parsedData
+    let {id,meter_number,available_credit} = value;
+    let r_value;
        switch(entry_value){
         case "01":
             r_value = available_credit;
@@ -62,9 +60,10 @@ $(()=>{
        return r_value;
    }
 
+
     let _getUpdates = setInterval(()=>{
         $.get('./scripts/getUpdates.php',(data,status)=>{
-           RefreshELem(_recievedData(data));
+           action_btn(_recievedData(data));
         })
     },2200)
 
