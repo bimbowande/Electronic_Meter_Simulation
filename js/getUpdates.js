@@ -8,11 +8,24 @@ $(()=>{
         return _parsedData;
     }
 
+    //!!!!!!!!!!!!!!!!!!! read value based on click !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    let getValue = () => {
+         let string  = '';
+        $('.btn-box').click(function(){
+            let val = $(this).data('value');
+            string += val;
+            console.log(string);
+            console.log(typeof(string));
+        })
+        
+    }
+    console.log(getValue());
+
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
-   let action_btn = (entry_value,value) => {
+   let action_btn = (value) => {
        //destructure the _parsedData
     let {id,meter_number,available_credit} = value;
-    let r_value;
+    let entry_value = "01", r_value;
        switch(entry_value){
         case "01":
             r_value = available_credit;
@@ -57,13 +70,15 @@ $(()=>{
             r_value ='Invalid Input';
        }
 
-       return r_value;
+       r_value;
    }
 
 
     let _getUpdates = setInterval(()=>{
         $.get('./scripts/getUpdates.php',(data,status)=>{
            action_btn(_recievedData(data));
+
+          
         })
     },2200)
 
