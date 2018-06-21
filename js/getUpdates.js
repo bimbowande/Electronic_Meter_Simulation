@@ -11,15 +11,20 @@ $(()=>{
     //!!!!!!!!!!!!!!!!!!! read value based on click !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     let getValue = () => {
          let string  = '';
-        $('.btn-box').click(function(){
+        $('.command-line').click(function(){
             let val = $(this).data('value');
             string += val;
-            console.log(string);
-            console.log(typeof(string));
+            if(string.length > 2){
+                alert("Invalid input")
+            }
+            else{
+                $('.power-output').text(string);
+            }
+            
         })
-        
     }
-    console.log(getValue());
+
+    getValue();
 
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
    let action_btn = (value) => {
