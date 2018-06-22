@@ -26,13 +26,14 @@ $(()=>{
         })
     }
 
-    console.log(document.querySelector('.power-output').innerHTML);
-
+    getValue();
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
    let action_btn = (value) => {
        //destructure the _parsedData
     let {id,meter_number,available_credit} = value;
     let entry_value = "01", r_value;
+
+
        switch(entry_value){
         case "01":
             r_value = available_credit;
