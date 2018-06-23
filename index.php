@@ -50,6 +50,7 @@
 									<div class="meter-screen-content">
 										<div class="meter-content-display">
 											<h3 class="power-output"></h3>
+											<small class="input-value"></small>
 										</div>
 									</div>
 								</div>

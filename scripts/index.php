@@ -38,6 +38,7 @@ class Meter{
         return $data;
     }
 }
+
 $data = new Meter();
 $d_data = $data->displayData();
 $_SESSION['meter_id'] = $d_data[0]['id'];

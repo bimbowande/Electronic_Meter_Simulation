@@ -24,7 +24,7 @@ body, html {
 
 /* line 21, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-design {
-  height: 520px;
+  height: 560px;
   width: 40%;
   margin: 0 auto;
   padding: 10px 5px; }
@@ -95,7 +95,7 @@ body, html {
     width: 80%;
     padding: 10px;
     display: inline-block;
-    height: 50px;
+    height: 70px;
     border: 3px solid black;
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#777), to(#ddd)); }

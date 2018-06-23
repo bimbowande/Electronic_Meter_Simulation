@@ -1,38 +1,41 @@
 $(()=>{
-   $('.arrow-btn').attr('disabled',true);
 
-    _parsedData = {};
-    let _recievedData  = _dataRecieved => {
-      
+    let _getUpdates = () => {
+        setInterval(()=>{
+            $.get('./scripts/getUpdates.php',(data,status)=>{
+                _recievedData(data);
+                let {id,meter_number,available_credit} = _recievedData(data);
+                $('.power-output').text(available_credit);
+            })
+        },2200)
+    }
+
+    let _recievedData  = _dataRecieved => {  
          _dataRecieved = JSON.parse(_dataRecieved).forEach(element => {
              _parsedData = element;  
         });
         return _parsedData;
     }
 
-    //!!!!!!!!!!!!!!!!!!! read value based on click !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    let getValue = () => {
-         let string  = '';
-        $('.command-line').click(function(){
-            let val = $(this).data('value');
-            string += val;
-            if(string.length > 2){
-                alert("Invalid input");
-            }
-            else{
-                $('.power-output').text(string);
-                $('.arrow-btn').attr('disabled',false);
-            }
-        })
-    }
+    let string ='';
+    $('.command-line').click(function(){
+        string  += $(this).attr('data-value');
+        console.log(string);
+        $('.input-value').text(string);
+    })
 
-    getValue();
+    $('.arrow-btn-left').click(function(){
+        let str_lngth = string.length-1;
+        string = string.substring(0,str_lngth);
+        $('.input-value').text(string);
+    })
+
+    
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
    let action_btn = (value) => {
        //destructure the _parsedData
     let {id,meter_number,available_credit} = value;
     let entry_value = "01", r_value;
-
 
        switch(entry_value){
         case "01":
@@ -79,12 +82,6 @@ $(()=>{
        }
 
        r_value;
-   }
-
-
-    let _getUpdates = setInterval(()=>{
-        $.get('./scripts/getUpdates.php',(data,status)=>{
-           action_btn(_recievedData(data));
-        })
-    },2200)
+   }  
+   _getUpdates();
 })
