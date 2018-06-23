@@ -26,16 +26,25 @@ $(()=>{
 
     $('.arrow-btn-left').click(function(){
         let str_lngth = string.length-1;
+        if(str_lngth < 0){
+            alert('no value to delete');
+        }
         string = string.substring(0,str_lngth);
         $('.input-value').text(string);
+    })
+    
+    $('.arrow-btn-right').click(function(){
+       $.get('./scripts/getUpdates.php',(data,status){
+           _recievedData(data);
+           let {id,meter_number,available_credit} = _recievedData(data);
+       })
     })
 
     
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
    let action_btn = (value) => {
        //destructure the _parsedData
-    let {id,meter_number,available_credit} = value;
-    let entry_value = "01", r_value;
+    let entry_value = value, r_value;
 
        switch(entry_value){
         case "01":
