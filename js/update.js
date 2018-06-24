@@ -20,9 +20,9 @@ $(()=>{
        /*
         *  method for sending updated power
         */
-            let updates = (availablePower,meter_id,powerConsumed) => {
+            let updates = (availablePower,meter_id,powerConsumed,currentLoad) => {
                 let data_parsed = {
-                    availablePower,meter_id,powerConsumed
+                    availablePower,meter_id,powerConsumed,currentLoad
             }
                 /**
                  *  Post updated info to the database
@@ -57,7 +57,7 @@ $(()=>{
             availablePower= availablePower - load[loadIndex];
 
             //updates
-            updates(availablePower,meter_id,powerConsumed);
+            updates(availablePower,meter_id,powerConsumed,load[loadIndex]);
 
         },2200);
     /***********!!! live feeds updates from data to display on the Meter !!!******************/

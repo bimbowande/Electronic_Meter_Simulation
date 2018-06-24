@@ -3,9 +3,9 @@ $(()=>{
     let _getUpdates = () => {
         setInterval(()=>{
             $.get('./scripts/getUpdates.php',(data,status)=>{
-                _recievedData(data);
+               console.log( _recievedData(data));
                 let {id,meter_number,available_credit} = _recievedData(data);
-                $('.power-output').text(available_credit);
+                $('.power-output').text(available_credit  + ' kwhr');
             })
         },2200)
     }
@@ -19,16 +19,18 @@ $(()=>{
 
     let string ='';
     $('.command-line').click(function(){
-        string  += $(this).attr('data-value');
-        console.log(string);
        
-        if(string.length > 2){
-            alert('Only two inputs')
-        }   else $('.input-value').text(string);
+        if(string.length >= 2){
+            alert('Only two inputs required')
+        }   else {
+                string  += $(this).attr('data-value');
+                $('.input-value').text(string );
+        }
     })
 
     $('.arrow-btn-left').click(function(){
         let str_lngth = string.length-1;
+        $('.display-val').text('');
         if(str_lngth < 0){
             alert('no value to delete');
         }
@@ -43,15 +45,13 @@ $(()=>{
         }
        $.get('./scripts/getUpdates.php',(data,status)=> {
            _recievedData(data);
-           let {id,meter_number,available_credit} = _recievedData(data);
-           alert(id);
-
+           let display_val = action_btn(string,{id,meter_number,available_credit,totalcredit_used,currentload} = _recievedData(data));
+           $('.display-val').text(display_val);
        })
     })
 
-    
   // !!!!!   Return value fo the value passed, the value parameter takes in the Object !!!!!!!!!!
-   let action_btn = (value) => {
+   let action_btn = (value,obj) => {
        //destructure the _parsedData
     let entry_value = value, r_value;
 
@@ -61,7 +61,7 @@ $(()=>{
         break;
 
         case "02":
-            r_value = available_credit;
+            r_value = currentload;
         break;
 
         case "03":
@@ -98,8 +98,8 @@ $(()=>{
         default:
             r_value ='Invalid Input';
        }
-
-       r_value;
+       return r_value;
    }  
+
    _getUpdates();
 })

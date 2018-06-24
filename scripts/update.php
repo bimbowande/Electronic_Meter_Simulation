@@ -10,9 +10,9 @@ class UpdateData{
         $testConn = new ConnectInfo();
         $this->connDB =  $testConn->connect();
     } 
-    public function getUpdates($availablePower,$meter_id,$powerConsumed){
+    public function getUpdates($availablePower,$meter_id,$powerConsumed,$currentLoad){
         if($availablePower > 0){
-            $this->query = "UPDATE meter_details SET available_credit = '$availablePower',totalcredit_used = '$powerConsumed' WHERE id='$meter_id'";
+            $this->query = "UPDATE meter_details SET available_credit = '$availablePower',totalcredit_used = '$powerConsumed',currentload = '$currentLoad' WHERE id='$meter_id'";
             $this->result = mysqli_query($this->connDB,$this->query);
             echo  $error = $this->result ? 'succesful upload':$this->result->error;
     
@@ -26,6 +26,7 @@ if(isset($_POST)){
     $availablePower = $_POST['availablePower'];
     $meter_id = $_POST['meter_id'];
     $powerConsumed = $_POST['powerConsumed'];
-    $collect_update =  $updates->getUpdates($availablePower,$meter_id,$powerConsumed);
+    $currentLoad = $_POST['currentLoad'];
+    $collect_update =  $updates->getUpdates($availablePower,$meter_id,$powerConsumed,$currentLoad);
 } else echo 'no data sent';
 ?>
