@@ -21,7 +21,10 @@ $(()=>{
     $('.command-line').click(function(){
         string  += $(this).attr('data-value');
         console.log(string);
-        $('.input-value').text(string);
+       
+        if(string.length > 2){
+            alert('Only two inputs')
+        }   else $('.input-value').text(string);
     })
 
     $('.arrow-btn-left').click(function(){
@@ -31,12 +34,18 @@ $(()=>{
         }
         string = string.substring(0,str_lngth);
         $('.input-value').text(string);
+        
     })
     
     $('.arrow-btn-right').click(function(){
-       $.get('./scripts/getUpdates.php',(data,status){
+        if(string ===''){
+            alert('no input yet');
+        }
+       $.get('./scripts/getUpdates.php',(data,status)=> {
            _recievedData(data);
            let {id,meter_number,available_credit} = _recievedData(data);
+           alert(id);
+
        })
     })
 
