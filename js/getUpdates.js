@@ -1,11 +1,12 @@
 $(()=>{
 
+    //method for 
     let _getUpdates = () => {
         setInterval(()=>{
             $.get('./scripts/getUpdates.php',(data,status)=>{
                console.log( _recievedData(data));
                 let {id,meter_number,available_credit} = _recievedData(data);
-                $('.power-output').text(available_credit  + ' kwhr');
+                $('.power-output').text(available_credit);
             })
         },2200)
     }

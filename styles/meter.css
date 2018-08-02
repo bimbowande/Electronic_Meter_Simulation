@@ -31,37 +31,36 @@ body, html {
   /* line 26, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-design .meter-layer {
     background-color: rgba(234, 234, 234, 0.9);
-    height: 100%;
     border-radius: 10px;
     padding: 5px 10px; }
-    /* line 31, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 30, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-design .meter-layer-2 {
       border-style: dotted;
       height: inherit;
       border-color: rgba(24, 24, 24, 0.1);
       padding: 4px 3px; }
-    /* line 37, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 36, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-design .meter-layer-3 {
       box-shadow: 3px 3px 10px 3px rgba(123, 123, 123, 0.4);
       height: inherit;
       background-color: rgba(234, 234, 234, 0.9); }
 
 /*meter features*/
-/* line 47, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 46, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-layer-3 .meter-layer-content {
   width: inherit;
   height: 90%;
   padding: 10px; }
-  /* line 52, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 51, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-layer-3 .meter-layer-content .indicator-section .indicator-content {
     display: flex; }
-    /* line 54, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 53, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator {
       margin-left: 18px;
       position: relative;
       text-align: center;
       padding: 3px; }
-      /* line 59, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 58, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator .indicator-light {
         width: 18px;
         display: inline-block;
@@ -71,13 +70,13 @@ body, html {
         margin-left: 20px;
         border: 1px solid rgba(134, 134, 134, 0.9);
         box-shadow: 1px 2px 1px 1px rgba(34, 34, 34, 0.9); }
-      /* line 69, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 68, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .indicator h3 {
         position: absolute;
         width: 60px;
         font-size: 12px;
         font-weight: 100; }
-    /* line 76, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 75, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-layer-3 .meter-layer-content .indicator-section .indicator-content .sensor {
       margin-left: 23px;
       margin-top: 10px;
@@ -85,12 +84,12 @@ body, html {
       height: 50px;
       background-color: black; }
 
-/* line 91, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 90, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-screen {
   width: inherit;
   margin-top: 15px;
   text-align: center; }
-  /* line 95, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 94, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-screen .meter-screen-content {
     width: 80%;
     padding: 10px;
@@ -100,67 +99,67 @@ body, html {
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#777), to(#ddd)); }
 
-/* line 106, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 105, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .meter-text {
   padding: 5px; }
-  /* line 109, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 108, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-1 {
     font-family: Georgia;
     display: flex;
     position: relative;
     margin-bottom: 10px; }
-    /* line 115, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 114, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h2, .meter-text .text-1 span {
       color: #0c0c8c; }
-    /* line 118, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 117, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h2 {
       margin-left: 30px;
       font-style: italic; }
-    /* line 122, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 121, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-1 h3 {
       position: absolute;
       right: 25px;
       font-weight: 800; }
-  /* line 129, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 128, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-2 {
     text-align: center;
     font-family: sans-serif;
     line-height: 20px; }
-    /* line 133, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 132, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-2 h4 {
       display: inline-block; }
-  /* line 137, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 136, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .meter-text .text-3 {
     display: flex;
     margin-top: 10px; }
-    /* line 140, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 139, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-3 .isbn-image {
       width: 60%;
       text-align: right; }
-      /* line 143, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 142, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-text .text-3 .isbn-image img {
         width: 60%; }
-    /* line 147, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 146, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .meter-text .text-3 .status-code {
       width: 40%;
       margin-left: 10px;
       border: 1px solid black; }
-      /* line 151, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 150, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .meter-text .text-3 .status-code .text-content {
         display: flex;
         height: auto;
         margin-top: 3px; }
-        /* line 155, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+        /* line 154, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
         .meter-text .text-3 .status-code .text-content h4, .meter-text .text-3 .status-code .text-content p {
           padding: 2px;
           font-size: 12px; }
 
-/* line 164, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 163, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .btn-content {
   display: flex;
   margin-top: 10px;
   margin-left: 20px; }
-  /* line 170, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 169, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .btn-content .btn .btn-box {
     display: inline-block;
     width: 30%;
@@ -171,54 +170,54 @@ body, html {
     text-align: center;
     border-color: transparent;
     border-radius: 10px; }
-    /* line 180, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 179, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .btn-content .btn .btn-box span {
       padding: 10px 0 10px 0;
       width: 100%; }
-    /* line 184, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 183, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .btn-content .btn .btn-box:hover {
       border: none;
       outline: none;
       color: white;
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.8); }
-  /* line 193, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 192, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .btn-content .btn-command {
     margin-left: 10px; }
-    /* line 195, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    /* line 194, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
     .btn-content .btn-command .command-text {
       display: flex; }
-      /* line 197, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 196, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .btn-content .btn-command .command-text h4, .btn-content .btn-command .command-text p {
         font-size: 12px; }
-      /* line 200, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+      /* line 199, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
       .btn-content .btn-command .command-text p {
         margin-left: 5px; }
 
-/* line 208, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 207, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .arrow-btn-left:before {
   font-family: FontAwesome;
   content: '\f177';
   color: black; }
-  /* line 212, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 211, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .arrow-btn-left:before:hover {
     color: white; }
 
-/* line 217, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 216, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .arrow-btn-right:before {
   font-family: FontAwesome;
   content: ' \f178';
   color: black; }
 
-/* line 224, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 223, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .arrow-btn-left:hover, .arrow-btn-right:hover {
   background: white !important; }
 
-/* line 228, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+/* line 227, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
 .arrow-btn-test {
   background-color: red;
   opacity: 0.2; }
-  /* line 231, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  /* line 230, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
   .arrow-btn-test:hover {
     background-color: red;
     opacity: 0.4; }
