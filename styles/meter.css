@@ -5,7 +5,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"), url(../../../fonts/Lato-Light.ttf);
+  src: local("Lato Light"), local("Lato-Light"), url(../fonts/Lato-Light.ttf);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 /* latin */
@@ -13,7 +13,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(../../../fonts/Lato-Regular.ttf);
+  src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-Regular.ttf);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 /* latin */
@@ -21,7 +21,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(../../../fonts/Lato-Bold.ttf);
+  src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.ttf);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 /* line 3, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
@@ -248,5 +248,43 @@ body, html {
   .arrow-btn-test:hover {
     background-color: red;
     opacity: 0.4; }
+
+/* line 239, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.meter-content-display {
+  position: relative; }
+  /* line 241, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .meter-content-display h3 {
+    position: relative; }
+  /* line 244, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .meter-content-display .input-value {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    top: 42px; }
+  /* line 250, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .meter-content-display .display-val {
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 40px; }
+
+/* line 259, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+.actions {
+  position: absolute;
+  top: 20px;
+  left: 40px; }
+  /* line 263, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+  .actions button {
+    background-color: #177bbe;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 2px 1px #177bbe;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 20px; }
+    /* line 272, ../../wamp/www/Electronic_Meter_Simulation/styles/meter.scss */
+    .actions button:hover {
+      background-color: #1767aa; }
 
 /*# sourceMappingURL=meter.css.map */

@@ -235,3 +235,42 @@ body,html{
 		opacity: 0.4;
 	}
 }
+
+.meter-content-display{
+	position: relative;
+	& h3{
+		position: relative;
+	}
+	& .input-value{
+		position: absolute;
+		left: 20px;
+		font-size: 18px;
+		top:42px;
+	}
+	& .display-val{
+		font-size: 20px;
+		position: absolute;
+		right: 20px;
+		top:40px;
+	}
+}
+
+//section for actions
+.actions {
+	position: absolute;
+	top:20px;
+	left:40px;
+	& button{
+		background-color: rgba(23,123,190,1);
+		color: white;
+		cursor: pointer;
+		outline: none;
+		box-shadow: 1px 2px 1px rgba(23,123,190,1);
+		border:  3px solid transparent;
+		border-radius: 20px;
+		padding: 20px;
+		&:hover{
+			background-color: rgba(23,103,170,1);
+		}
+	}
+}

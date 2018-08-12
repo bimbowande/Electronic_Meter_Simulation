@@ -49,7 +49,7 @@
 										<div class="meter-content-display">
 											<h3 class="power-output"></h3>
 											<small class="input-value"></small>
-											<h2 class="display-val"></h2>
+											<p class="display-val"></p>
 										</div>
 									</div>
 								</div>
@@ -160,6 +160,13 @@
 				</div>
 			</div>
 		</div >
+	</section>
+	
+	<!-- actions -->
+	<section class="actions">
+		<div class="">
+			<button>Click Open Meter</button>
+		</div>
 	</section>
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/display.js"></script>
