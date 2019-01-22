@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="../styles/admin-login.css">
 </head>
 <body>
+	<section class=container-fluid>
+		
+	</section>
 		<!--  Jquery--->
 	<script src='../js/jquery.min.js'></script>
 		<!--  Bootstrap --->
