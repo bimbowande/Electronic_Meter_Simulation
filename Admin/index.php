@@ -10,7 +10,19 @@
 </head>
 <body>
 	<section class=container-fluid>
-		
+		<div class='col-lg-10'>
+			<div>
+				<form action="">
+					<div class="form-group">
+						<label for=""></label>
+						<input type="text">
+					</div>
+					<div class="form-group">
+						<label for=""></label><input type="text">
+					</div>
+				</form>
+			</div>
+		</div>
 	</section>
 		<!--  Jquery--->
 	<script src='../js/jquery.min.js'></script>
