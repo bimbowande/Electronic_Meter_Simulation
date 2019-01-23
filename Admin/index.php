@@ -13,12 +13,17 @@
 		<div class='col-lg-10'>
 			<div>
 				<form action="">
+					<div><h3>Admin Login</h3></div>
 					<div class="form-group">
-						<label for=""></label>
-						<input type="text">
+						<label for="">Username</label>
+						<input type="text" />
 					</div>
 					<div class="form-group">
-						<label for=""></label><input type="text">
+						<label for="">Password</label>
+						<input type="password"/>
+					</div>
+					<div class=''>
+						<button class='btn btn-lg btn-primary'>Login</button>
 					</div>
 				</form>
 			</div>
