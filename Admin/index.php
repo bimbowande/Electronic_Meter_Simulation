@@ -12,18 +12,19 @@
 	<section class='container-fluid body-container'>
 		<div class='col-lg-10 form-parent'>
 			<div class='col-lg-10 form-container'>
-				<form class='form' action='<? echo $_SERVER['PHP_SELF']?>'>
-					<div><h3>Admin Login</h3></div>
+				<form class='form'  method='POST' action='<? echo $_SERVER['PHP_SELF']?>'>
+					<h5 class='text-underline text-blue'>BEDC POWER MONITORING SYSTEM</h5>
+					<div class='form-header'><h5>Admin Login</h5></div>
 					<div class="form-group">
 						<label for="">Username</label>
-						<input  class='form-control' type="text" />
+						<input  class='form-control' placeholder='e.g Alfred' type="text" />
 					</div>
 					<div class="form-group">
 						<label for="">Password</label>
-						<input class='form-control' type="password"/>
+						<input class='form-control' placeholder='e.g **********' type="password"/>
 					</div>
 					<div class='form-group'>
-						<button class='btn btn-lg btn-primary'>Login</button>
+						<button class='btn btn-lg btn-primary btn-choice'>Login</button>
 					</div>
 				</form>
 			</div>
