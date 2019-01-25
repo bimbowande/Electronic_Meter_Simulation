@@ -9,20 +9,20 @@
 	<link rel="stylesheet" href="../styles/admin-login.css">
 </head>
 <body>
-	<section class=container-fluid>
+	<section class='container-fluid body-container'>
 		<div class='col-lg-10'>
-			<div>
-				<form action="">
+			<div class='col-lg-10'>
+				<form action='<?$_SERVER['PHP_SELF']?>'>
 					<div><h3>Admin Login</h3></div>
-					<div class="form-group">
+					<div class="form-group col-lg-4">
 						<label for="">Username</label>
-						<input type="text" />
+						<input  class='form-control' type="text" />
 					</div>
-					<div class="form-group">
+					<div class="form-group col-lg-4">
 						<label for="">Password</label>
-						<input type="password"/>
+						<input class='form-control' type="password"/>
 					</div>
-					<div class=''>
+					<div class='col-lg-4'>
 						<button class='btn btn-lg btn-primary'>Login</button>
 					</div>
 				</form>
