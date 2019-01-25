@@ -10,19 +10,19 @@
 </head>
 <body>
 	<section class='container-fluid body-container'>
-		<div class='col-lg-10'>
-			<div class='col-lg-10'>
-				<form action='<?$_SERVER['PHP_SELF']?>'>
+		<div class='col-lg-10 form-parent'>
+			<div class='col-lg-10 form-container'>
+				<form class='form' action='<? echo $_SERVER['PHP_SELF']?>'>
 					<div><h3>Admin Login</h3></div>
-					<div class="form-group col-lg-4">
+					<div class="form-group">
 						<label for="">Username</label>
 						<input  class='form-control' type="text" />
 					</div>
-					<div class="form-group col-lg-4">
+					<div class="form-group">
 						<label for="">Password</label>
 						<input class='form-control' type="password"/>
 					</div>
-					<div class='col-lg-4'>
+					<div class='form-group'>
 						<button class='btn btn-lg btn-primary'>Login</button>
 					</div>
 				</form>
