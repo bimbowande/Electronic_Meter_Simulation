@@ -14,7 +14,7 @@
 			<div class='col-lg-10 form-container'>
 				<form class='form'  method='POST' action='<? echo $_SERVER['PHP_SELF']?>'>
 					<h5 class='text-underline text-blue'>BEDC POWER MONITORING SYSTEM</h5>
-					<div class='form-header'><h5>Admin Login</h5></div>
+					<div class='form-header'><h5>Customer  Login</h5></div>
 					<div class="form-group">
 						<label for="">Username</label>
 						<input  class='form-control' placeholder='e.g Alfred' type="text" />
@@ -27,7 +27,7 @@
 						<button class='btn btn-lg btn-primary btn-choice'>Login</button>
 					</div>
 					<div class='form-group'>
-						<p>Are you a customer? <a href='customer.php'>Login here</a></p>
+						<p>Are you an ADMIN? <a href='index.php'>Login here</a></p>
 					</div>
 				</form>
 			</div>
