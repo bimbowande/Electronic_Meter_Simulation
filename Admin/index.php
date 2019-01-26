@@ -26,6 +26,9 @@
 					<div class='form-group'>
 						<button class='btn btn-lg btn-primary btn-choice'>Login</button>
 					</div>
+					<div class='form-group'>
+						<p>Are you a customer? <a>Login here</a></p>
+					</div>
 				</form>
 			</div>
 		</div>
