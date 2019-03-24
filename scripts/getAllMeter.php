@@ -57,5 +57,5 @@ class getAllMeter{
 	} 
 }
 
-$display_value  = new getAllMeter();
+
 ?>
